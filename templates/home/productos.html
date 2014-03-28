@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Catalogo de productos</h1>
+        {# Si existen productos activos #}
+        {% if productos %}    
+            <ul>
+            {% for p in productos%}
+                <li>{{   p.nombre    }}</li>
+            {% endfor%}
+            </ul>
+        {% else %}
+            <h2>No existen productos activos a la venta :(</h2>
+        {% endif %}
+    
+</body>
+</html>
