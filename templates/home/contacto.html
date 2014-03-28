@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+	<meta charset="UTF-8">
+	<title>Contactanos</title>
+</head>
+<body>
+    {# alex_dzul: "Un form que no va a mandar nada" #}
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
